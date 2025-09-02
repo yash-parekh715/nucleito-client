@@ -44,9 +44,9 @@ export function About() {
                 tomorrow.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
-                With a focus on performance, security, and scalability, we've
-                created a solution that grows with your business and adapts to
-                your evolving needs.
+                With a focus on performance, security, and scalability,
+                we&apos;ve created a solution that grows with your business and
+                adapts to your evolving needs.
               </p>
             </motion.div>
 
