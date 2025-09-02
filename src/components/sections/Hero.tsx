@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -57,11 +58,13 @@ export function Hero() {
               whileTap={{ scale: 0.95 }}
               className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold text-white shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
             >
-              <span className="relative z-10 flex items-center gap-2 cursor-pointer">
-                Start Chatting
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300" />
+              <Link href="/chat">
+                <span className="relative z-10 flex items-center gap-2 cursor-pointer">
+                  Start Chatting
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300" />
+              </Link>
             </motion.button>
           </motion.div>
         </motion.div>

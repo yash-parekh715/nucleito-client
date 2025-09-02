@@ -16,9 +16,21 @@ export function Navigation() {
   }, []);
 
   const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/__yash__parekh__/",
+      label: "Instagram",
+    },
+    {
+      icon: Github,
+      href: "https://github.com/Yash-Parekh715",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/parekhyash/",
+      label: "LinkedIn",
+    },
   ];
 
   return (
@@ -45,7 +57,7 @@ export function Navigation() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 cursor-pointer"
           >
             <div className="relative">
               <Sparkles className="w-6 h-6 text-cyan-400" />
@@ -69,6 +81,7 @@ export function Navigation() {
               <motion.a
                 key={social.label}
                 href={social.href}
+                target="_blank"
                 whileHover={{
                   scale: 1.2,
                   boxShadow: "0 0 20px rgba(0, 212, 255, 0.4)",
